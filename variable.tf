@@ -4,8 +4,8 @@ variable "bucketname" {
   default = "wilshan-use-case"
 }
 variable "acl" {
-  type = bool
-  default = true
+  type = string
+  default = "public-read-write"
 }
 variable "env" {
   type = string
