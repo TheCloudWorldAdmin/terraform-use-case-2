@@ -12,7 +12,7 @@ module "lambda_func" {
   lambda_handler = var.lambda_handler
   runtime = var.runtime
   lambda_execution_role = var.lambda_execution_role
-  s3_bucket = module.s3_bucket.bucketname
+  s3_bucket = var.bucketname
   s3_key = var.s3_key
   cwrulename = var.cwrulename
   event_bucket_name = var.event_bucket_name
