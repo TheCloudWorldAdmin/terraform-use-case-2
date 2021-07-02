@@ -1,4 +1,7 @@
-
+variable "region_name" {
+  type = string
+  default = "us-east-1"
+}
 variable "bucketname" {
   type = string
   default = "wilshan-use-case"
