@@ -29,7 +29,7 @@ variable "runtime" {
 }
 variable "lambda_execution_role" {
   type = string
-  default = ""
+  default = "arn:aws:iam::872019428947:role/lambda_role"
 }
 variable "s3_key" {
   type = string
