@@ -66,3 +66,8 @@ variable "principle1" {
   type = string
   default = "s3.amazonaws.com"
 }
+
+variable "layer_runtime" {
+  type = string
+  default = "python3.8"
+}
