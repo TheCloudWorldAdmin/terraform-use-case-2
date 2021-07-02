@@ -22,6 +22,7 @@ module "lambda_func" {
   action1 = var.action1
   principle1 = var.principle1
   source_arn = module.s3_bucket.arn
+  lambda_layer_name = var.lambda_layer_name
 }
   
   
