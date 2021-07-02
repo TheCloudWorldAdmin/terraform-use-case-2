@@ -18,11 +18,11 @@ module "lambda_func" {
   cwrulename = var.cwrulename
   event_bucket_name = var.event_bucket_name
   event_type = var.event_type
-  statement_id1 = var.statement_id1
-  action1 = var.action1
-  principle1 = var.principle1
-  source_arn = module.s3_bucket.arn
-  lambda_layer_name = var.lambda_layer_name
+  #statement_id1 = var.statement_id1
+  #action1 = var.action1
+  #principle1 = var.principle1
+  #source_arn = module.s3_bucket.arn
+  #lambda_layer_name = var.lambda_layer_name
 }
   
   
