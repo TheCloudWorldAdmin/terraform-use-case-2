@@ -71,3 +71,8 @@ variable "layer_runtime" {
   type = string
   default = "python3.8"
 }
+
+variable "lambda_layer_name" {
+  type = string
+  default = "layer_name"
+}
