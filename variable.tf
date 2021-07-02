@@ -1,25 +1,68 @@
-variable "region_name" {}
-variable "bucketname" {}
-variable "acl" {}
-variable "env" {}
-variable "versioning_enabled" {}
-variable "function_name" {}
-variable "lambda_handler" {}
-variable "runtime" {}
-variable "lambda_execution_role" {}
-variable "s3_bucket" {}
-variable "s3_key" {}
-variable "cwrulename" {}
-variable "schedule" {}
-variable "target_id" {}
-variable "statement_id2" {}
-variable "action2" {}
-variable "principle2" {}
-variable "event_bucket_name" {}
-variable "event_type" {}
-variable "prefix" {}
-variable "suffix" {}
-variable "statement_id1" {}
-variable "action1" {}
-variable "principle1" {}
-variable "source_arn" {}
+variable "region_name" {
+  type = string
+  default = "us-east-1"
+}
+variable "bucketname" {
+  type = string
+  default = "wilshan-use-case"
+}
+variable "acl" {
+  type = bool
+  default = true
+}
+variable "env" {
+  type = string
+  default = "prod"
+}
+variable "versioning_enabled" {
+  type = bool
+  default = true
+}
+variable "function_name" {
+  type = string
+  default = "lambda_function"
+}
+variable "lambda_handler" {
+  type = string
+  default = "lambda_function.lambda_handler"
+}
+variable "runtime" {
+  type = string
+  default = "python3.8"
+}
+variable "lambda_execution_role" {
+  type = string
+  default = ""
+}
+variable "s3_key" {
+  type = string
+  default = "lambda_function.zip"
+}
+variable "cwrulename" {
+  type = string
+  default = "myRule"
+}
+variable "event_bucket_name" {
+  type = string
+  default = "event_bucket"
+}
+variable "event_type" {
+  type = string
+  default = "s3:ObjectCreated:*"
+}
+#variable "prefix" {
+#  type = 
+#}
+#variable "suffix" {}
+variable "statement_id1" {
+  type = string
+  default = "AllowS3Invoke"
+}
+variable "action1" {
+  type = string
+  default = "lambda:InvokeFunction"
+}
+variable "principle1" {
+  type = string
+  default = "s3.amazonaws.com"
+}
