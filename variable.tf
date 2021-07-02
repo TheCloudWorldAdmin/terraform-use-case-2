@@ -54,18 +54,18 @@ variable "event_type" {
 #  type = 
 #}
 #variable "suffix" {}
-variable "statement_id1" {
-  type = string
-  default = "AllowS3Invoke"
-}
-variable "action1" {
-  type = string
-  default = "lambda:InvokeFunction"
-}
-variable "principle1" {
-  type = string
-  default = "s3.amazonaws.com"
-}
+#variable "statement_id1" {
+#  type = string
+#  default = "AllowS3Invoke"
+#}
+#variable "action1" {
+#  type = string
+#  default = "lambda:InvokeFunction"
+#}
+#variable "principle1" {
+#  type = string
+#  default = "s3.amazonaws.com"
+#}
 
 variable "layer_runtime" {
   type = string
